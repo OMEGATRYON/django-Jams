@@ -22,6 +22,9 @@ from jams.views import *
 router = routers.DefaultRouter()
 router.register(r"song", SongViewSet)
 router.register(r"album", AlbumViewSet)
+router.register(r"artist", ArtistViewSet)
+router.register(r"genre", GenreViewSet)
+router.register(r"playlist", PlaylistViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
