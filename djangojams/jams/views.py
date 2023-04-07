@@ -25,3 +25,13 @@ class PlaylistViewSet(viewsets.ModelViewSet):
     serializer_class = PlaylistSerializer
 
 
+class PlaylistSongViewSet(viewsets.ModelViewSet):
+    queryset = PlaylistSong.objects.all()
+    serializer_class = PlaylistSongSerializer
+
+class ArtistSongViewSet(viewsets.ModelViewSet):
+    queryset = ArtistSong.objects.all()
+    serializer_class = ArtistSongSerializer
+
+
+

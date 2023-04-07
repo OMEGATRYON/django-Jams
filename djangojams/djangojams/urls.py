@@ -25,6 +25,7 @@ router.register(r"album", AlbumViewSet)
 router.register(r"artist", ArtistViewSet)
 router.register(r"genre", GenreViewSet)
 router.register(r"playlist", PlaylistViewSet)
+router.register(r"artistsong", ArtistSongViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
